@@ -39,7 +39,7 @@ I study at university and I want to become a front-end developer. I like to solv
 ## Experience
 I have no work experience.
 ## Education
-* **University:** Belarusian State University Informatics and Radioelectronics
+* **University:** Belarusian State University Informatics and Radioelectronics, Faculty of Computer-Aided Design
 * **Courses:**
     * [FreeCodeCamp](https://www.freecodecamp.org/)
     * [Learn.javascript](https://learn.javascript.ru/)
