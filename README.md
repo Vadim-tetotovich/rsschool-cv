@@ -1,1 +1,0 @@
-https://Vadim-tetotovich.github.io/rsschool-cv/cv
