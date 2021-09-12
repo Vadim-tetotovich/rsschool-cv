@@ -37,7 +37,7 @@ I study at university and I want to become a front-end developer. I like to solv
 }
 ```
 ## Experience
-I have no work experienc.
+I have no work experience.
 ## Education
 * **University:** Belarusian State University Informatics and Radioelectronics
 * **Courses:**
