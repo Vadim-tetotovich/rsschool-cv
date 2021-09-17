@@ -3,3 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: block;
+    background: #E5E5E5;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block {
+    display: inline-block;
+    width: 1000px;
+}
+
+aside {
+    float: left;
+    width: 370px;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+main {
+    float: right;
+    width: 630px;
+    background-color: white;
+    text-align: left;
+}
+
+.photo {
+    width: 370px;
+    height: 432px;
+    margin-top: 42px;
+}
+
+.contacts {
+    margin-top: 70px;
+    margin-left: 42px;
+}
+
+.contacts ul {
+    margin-top: 4px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.contacts li {
+    padding-top: 12px;
+}
+
+.contacts li img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.contacts p {
+    display: inline;
+    vertical-align: middle;
+}
