@@ -61,3 +61,13 @@ main {
     display: inline;
     vertical-align: middle;
 }
+
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a:hover {
+    color: yellow;
+    cursor: pointer;
+}
