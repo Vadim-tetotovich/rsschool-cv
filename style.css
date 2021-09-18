@@ -186,3 +186,8 @@ main li:last-child {
     margin-top: 35px;
     font-size: 14px;
 }
+
+.codeExample li {
+    padding: 0;
+    margin: 0;
+}
