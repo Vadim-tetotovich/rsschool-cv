@@ -102,7 +102,7 @@ main {
 }
 
 .education a:hover {
-    color:#FFEA30
+    color:#FFEA30;
 }
 
 main h1 {
@@ -163,6 +163,10 @@ main li:last-child {
     display: inline-block;
 }
 
+.skills li{
+    font-size: 14px;
+}
+
 .technologies {
     float:left
 }
@@ -190,4 +194,33 @@ main li:last-child {
 .codeExample li {
     padding: 0;
     margin: 0;
+}
+
+footer {
+    display: inline-block;
+    width: 1000px;
+    height: 128px;
+    background: #FFEA30;
+    margin-top: -5px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color:black;
+}
+
+.gitLink {
+    display: flex;
+    align-items: center;
+}
+
+.gitIcon {
+    margin-right: 25px;
 }
