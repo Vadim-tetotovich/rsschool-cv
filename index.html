@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Quicksand&family=Rokkitt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/lightfair.min.css">
+    <title>My resume</title>
+</head>
+<body>
+    <div class="block">
+        <aside>
+            <img class="photo" src="images/myPhoto.png" alt="Photo">
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><img src="icons/phone.png" alt="Phone"><p><a href="https://t.me/VadekVodopadek">+ 375 (29) 777-50-58</a></p></li>
+                    <li><img src="icons/email.png" alt="Email"><p><a href="mailto:vadimbondarchuk10@gmail.com">vadimbondarchuk10@gmail.com</a></p></li>
+                    <li><img src="icons/vk.png" alt="Vk"><p><a href="https://vk.com/tetotovich">Vadim Bondarchuk</a></p></li>
+                    <li><img src="icons/github.png" alt="gitHub"><p><a href="https://github.com/Vadim-tetotovich">Vadim-tetotovich</a></p></li>
+                </ul>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p><a href="https://www.bsuir.by/ru/fkp">University: BSUIR, Faculty of <br>Computer-Aided Design</a></p>
+                <h3>Courses</h3>
+                <p><a href="https://www.freecodecamp.org/learn">FreeCodeCamp</a>
+                <br><a href="https://learn.javascript.ru/">Learn.javascript</a></p>
+            </div>
+        </aside>
+        <main>
+            <h1>Vadim Bondarchuk</h1>
+            <div class="container">
+                <div class="aboutMe">
+                    <h2>About me</h2>
+                    <p>I study at university and I want to become a front-end developer.
+                    <br>I like solving interesting tasks in the field of programming.
+                    <br>I am a teamplayer, always ready to develop my skills and achieve goals.</p>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills">
+                <div class="technologies">
+                    <h4>Technologies:</h4>
+                <ul>
+                    <li><img src="icons/html.png" alt="HTML"><p>HTML</p></li>
+                    <li><img src="icons/css.png" alt="CSS"><p>CSS</p></li>
+                    <li><img src="icons/js.png" alt="JS"><p>JS</p></li>
+                    <li><img src="icons/cpp.png" alt="C/C++"><p>C/C++</p></li>
+                    <li><img src="icons/sharp.png" alt="C#"><p>C#</p></li>
+                    <li><img src="icons/python.png" alt="PYTHON"><p>Python</p></li>
+                </ul>
+                </div>
+                <div class="languages">
+                    <h4>Languages:</h4>
+                <ul>
+                    <li><img src="icons/rus.png" alt="russian"><p>Russian - native</p></li>
+                    <li><img src="icons/by.png" alt="belarussian"><p>Belarussian - native</p></li>
+                    <li><img src="icons/en.png" alt="english"><p>English - A2+</p></li>
+                </ul>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <p>I have no work experience.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="codeExample">
+                    <h2>Code Example</h2>
+                    <pre>
+                        <code>
+function revrot(str, sz) {
+  if(sz === 0) return ""
+  const regSize = new RegExp('.{1,'+sz+'}', 'g')
+  return str.match(regSize).map((digits) => {
+    if(digits.length !== sz) {
+      return ""
+    }
+    let sum = 0;
+    for(let i = 0; i &lt; digits.length; i++){
+      sum += parseInt(digits[i]);
+    }
+    if(sum % 2 == 0){
+      return digits.split("").reverse().join("")
+    } else {
+      return digits.slice(1) + digits[0];
+    }
+  }).join("")
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="links">
+            <a class="gitLink" href="https://github.com/Vadim-tetotovich">
+                <img class="gitIcon" src="icons/gitLink.png" alt="gitHub"><p>Vadim-tetotovich</p></a>
+            <p>2021</p>
+            <a href="https://rs.school/"><img src="icons/rsschool.png" alt="rsschool"></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
