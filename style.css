@@ -128,17 +128,18 @@ main h2{
 }
 
 main ul {
-    margin-top: 21px;
+    margin-top: 16px;
 }
 
 main li {
     list-style: none;
 }
 
-main ul h4 {
+main h4 {
     font-style: normal;
     font-weight: 500;
     margin-bottom: 16px;
+    margin-top: 20px;
 }
 
 main ul p {
@@ -186,8 +187,6 @@ main li:last-child {
 }
 
 .codeExample pre{
-    font-family: consolas;
-    margin-top: 35px;
     font-size: 14px;
 }
 
