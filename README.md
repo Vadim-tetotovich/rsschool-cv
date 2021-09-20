@@ -1,1 +1,1 @@
-https://Vadim-tetotovich.github.io/rsschool-cv/cv
+https://Vadim-tetotovich.github.io/rsschool-cv/
