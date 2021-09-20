@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Quicksand&family=Rokkitt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/lightfair.min.css">
     <title>My resume</title>
 </head>
 <body>
@@ -43,7 +44,8 @@
                 <h2>Skills</h2>
                 <div class="skills">
                 <div class="technologies">
-                <ul><h4>Technologies:</h4>
+                    <h4>Technologies:</h4>
+                <ul>
                     <li><img src="icons/html.png" alt="no"><p>HTML</p></li>
                     <li><img src="icons/css.png" alt="no"><p>CSS</p></li>
                     <li><img src="icons/js.png" alt="no"><p>JS</p></li>
@@ -53,7 +55,8 @@
                 </ul>
                 </div>
                 <div class="languages">
-                <ul><h4>Languages:</h4>
+                    <h4>Languages:</h4>
+                <ul>
                     <li><img src="icons/rus.png" alt="no"><p>Russian - native</p></li>
                     <li><img src="icons/by.png" alt="no"><p>Belarussian - native</p></li>
                     <li><img src="icons/en.png" alt="no"><p>English - A2+</p></li>
@@ -70,8 +73,28 @@
             <div class="container">
                 <div class="codeExample">
                     <h2>Code Example</h2>
-                    <pre class="javascript" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">function</span> revrot<span style="color: #009900;">&#40;</span>str<span style="color: #339933;">,</span> sz<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>sz <span style="color: #339933;">===</span> <span style="color: #CC0000;">0</span><span style="color: #009900;">&#41;</span> <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #3366CC;">&quot;&quot;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #000066; font-weight: bold;">const</span> regSize <span style="color: #339933;">=</span> <span style="color: #000066; font-weight: bold;">new</span> RegExp<span style="color: #009900;">&#40;</span><span style="color: #3366CC;">'.{1,'</span><span style="color: #339933;">+</span>sz<span style="color: #339933;">+</span><span style="color: #3366CC;">'}'</span><span style="color: #339933;">,</span> <span style="color: #3366CC;">'g'</span><span style="color: #009900;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #000066; font-weight: bold;">return</span> str.<span style="color: #660066;">match</span><span style="color: #009900;">&#40;</span>regSize<span style="color: #009900;">&#41;</span>.<span style="color: #660066;">map</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>digits<span style="color: #009900;">&#41;</span> <span style="color: #339933;">=&gt;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>digits.<span style="color: #660066;">length</span> <span style="color: #339933;">!==</span> sz<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">      <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #3366CC;">&quot;&quot;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    let sum <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #000066; font-weight: bold;">for</span><span style="color: #009900;">&#40;</span>let i <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;</span> digits.<span style="color: #660066;">length</span><span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">      sum <span style="color: #339933;">+=</span> parseInt<span style="color: #009900;">&#40;</span>digits<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>sum <span style="color: #339933;">%</span> <span style="color: #CC0000;">2</span> <span style="color: #339933;">==</span> <span style="color: #CC0000;">0</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">      <span style="color: #000066; font-weight: bold;">return</span> digits.<span style="color: #660066;">split</span><span style="color: #009900;">&#40;</span><span style="color: #3366CC;">&quot;&quot;</span><span style="color: #009900;">&#41;</span>.<span style="color: #660066;">reverse</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>.<span style="color: #660066;">join</span><span style="color: #009900;">&#40;</span><span style="color: #3366CC;">&quot;&quot;</span><span style="color: #009900;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&#125;</span> <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">      <span style="color: #000066; font-weight: bold;">return</span> digits.<span style="color: #660066;">slice</span><span style="color: #009900;">&#40;</span><span style="color: #CC0000;">1</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">+</span> digits<span style="color: #009900;">&#91;</span><span style="color: #CC0000;">0</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span>.<span style="color: #660066;">join</span><span style="color: #009900;">&#40;</span><span style="color: #3366CC;">&quot;&quot;</span><span style="color: #009900;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
-
+                    <pre>
+                        <code>
+function revrot(str, sz) {
+  if(sz === 0) return ""
+  const regSize = new RegExp('.{1,'+sz+'}', 'g')
+  return str.match(regSize).map((digits) => {
+    if(digits.length !== sz) {
+      return ""
+    }
+    let sum = 0;
+    for(let i = 0; i &lt; digits.length; i++){
+      sum += parseInt(digits[i]);
+    }
+    if(sum % 2 == 0){
+      return digits.split("").reverse().join("")
+    } else {
+      return digits.slice(1) + digits[0];
+    }
+  }).join("")
+}
+                        </code>
+                    </pre>
                 </div>
             </div>
         </main>
@@ -84,5 +107,7 @@
             <a href="https://rs.school/"><img src="icons/rsschool.png" alt="no"></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
